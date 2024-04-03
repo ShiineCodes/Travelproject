@@ -7,7 +7,15 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .hero {
   background: url(/images/alb2.jpg);
   background-position: 50% 35%;
@@ -62,6 +70,39 @@ body {
 footer {
 color: white;
 text-align: center;
+background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/images/johnny-africa-Ck6A8DyhfaY-unsplash.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+padding: 5px;
+background-position: center;
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 0.9;
+  margin-right: 20px;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
 }
 a {
 color: rgb(59, 218, 218);
