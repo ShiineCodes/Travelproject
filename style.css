@@ -1,8 +1,65 @@
-h1 {
+body {
   font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 144px;
-  color:red;
+  background-color: #000;
+
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: url(/images/alb2.jpg);
+  background-position: 50% 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.header {
+  text-align: center;
+  padding: 150px 0 100px;
+  margin: 0;
+  background-color: #000;
+}
+.icon {
+  width: 120px;
+  margin-bottom: 20px;
+}
+.header h1 {
+  color: #ffff;
+  background-color: #000;
+  font-weight: 900;
+  font-size: 200px;
+  letter-spacing: 30px;
+  line-height: 1;
+  margin: 0;
+  mix-blend-mode: multiply;
+}
+.header h2 {
+  color: #ffff;
+  font-size: 46px;
+  font-weight: 400;
+  letter-spacing: 20px;
+  padding-bottom: 30px;
+}
+.header .btn {
+  background-color: transparent;
+  font-size: 26px;
+  border: solid 2px #ffffff;
+  color: #ffff;
+  text-decoration: none;
+  padding: 18px 23px;
+  margin-left: auto;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+}
+.header .btn:hover {
+  background-color: #054046;
+  border: solid 2px #ffffff;
+  color: #ffff;
+  transition: all 200ms ease-in-out;
+}
+footer {
+color: white;
+text-align: center;
 }
