@@ -164,23 +164,31 @@ section {
   padding: 50px 0;
 }
 .gallery h2 {
-  text-align: right;
-  margin-right: 100px;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 150%;
+  mix-blend-mode: plus-lighter;
 }
 .grid-gallery {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.gallery img {
+  aspect-ratio: 1 / 1;
 }
 .img-filter {
   filter: grayscale(100%);
+  transition: all 200ms linear;
 }
+
 .img-filter:hover {
   filter: grayscale(0%);
-  transform: scale(1.3);
+  transform: scale(1.05);
   z-index: 1;
-  transition: all 300ms ease-in-out;
 }
 
 .i2 {
@@ -208,47 +216,81 @@ section {
 .i11 {
   grid-row: span 4;
 }
+
 footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  padding: 10px 20px;
   color: white;
-  text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/johnny-africa-Ck6A8DyhfaY-unsplash.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 5px;
   background-position: center;
-}
-footer h3 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
+  background-size: cover;
+
+  ul,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: block;
+  }
+
+  a {
+    color: aqua;
+  }
+
+  a:visited {
+    color: cornflowerblue;
+  }
 }
 
-footer p {
-  font-weight: 400;
-  font-size: 16px;
-  opacity: 0.9;
-  margin-right: 20px;
-  line-height: 24px;
-  text-align: justify;
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
 }
 
-footer ul {
-  padding: 0;
+.custom-wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  padding: 5px;
 }
 
-footer li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.custom-wrapper-grid > img {
+  aspect-ratio: 1 / 1;
 }
 
-footer a {
-  color: white;
-  opacity: 0.7;
-}
-a {
-  color: rgb(59, 218, 218);
+.custom-card-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (max-width: 960px) {
