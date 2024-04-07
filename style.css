@@ -10,8 +10,19 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
+  grid-gap:64px;
+}
+.img-responsive {
+  max-width: 100%;
 }
 
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
 section {
   max-width: 1200px;
   margin: 0 auto;
@@ -66,6 +77,89 @@ section {
   border: solid 2px #ffffff;
   color: #ffff;
   transition: all 200ms ease-in-out;
+}
+main {
+  color: #ffff;
+  padding: 90px;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 6.2%, rgb(11, 132, 145) 91.1%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main h2 {
+  font-size: 40px;
+  letter-spacing: 7px;
+}
+main p {
+  line-height: 2;
+}
+section {
+  padding: 50px 0;
+}
+@media (max-width: 1050px) {
+  .container {
+    max-width: 90%;
+  }
+  .header h1 {
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: 20px;
+  }
+  .header h2,
+  .intro h2,
+  .cards h2,
+  .gallery h2,
+  .embeds h2 {
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-right: 0;
+  }
+  .cards-title p,
+  .embeds p {
+    text-align: center;
+  }
+  .header .btn {
+    font-size: 25px;
+    padding: 10px 15px;
+  }
+  main {
+    padding: 50px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    margin: 0 50px;
+  }
+  .grid-gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  .i1,
+  .i2,
+  .i3,
+  .i4,
+  .i5,
+  .i6,
+  .i7,
+  .i8,
+  .i9,
+  .i10,
+  .i11,
+  .i12 {
+    grid-column: 1;
+    grid-row: auto; 
+  }
+
+  .img-filter {
+    filter: none;
+  }
+
+  .img-filter:hover {
+    transform: none;
+  }
 }
 footer {
 color: white;
