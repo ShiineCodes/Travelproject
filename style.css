@@ -298,8 +298,8 @@ footer {
     padding: 60px 0;
   }
 
-  header h1 {
-    font-size: 48px;
+  .header h1 {
+    font-size: 46px;
   }
 
   header h2 {
