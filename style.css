@@ -8,11 +8,10 @@ body {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
 }
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   display: block;
 }
@@ -30,6 +29,14 @@ body {
 .card {
   background: rgb(146, 144, 144);
   margin: 30px 0;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
+.card-header.grid {
+  grid-gap: 0;
 }
 
 .card-body {
@@ -53,7 +60,7 @@ body {
   text-decoration: none;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px;
 }
@@ -122,7 +129,6 @@ main h2 {
   line-height: 1.5;
   margin: 0;
   letter-spacing: 5px;
- 
   opacity: 0.3;
   text-transform: uppercase;
 }
@@ -131,7 +137,6 @@ main h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
-
   margin: 0;
 }
 
@@ -226,5 +231,12 @@ a {
 
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
