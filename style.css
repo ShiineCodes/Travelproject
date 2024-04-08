@@ -1,7 +1,16 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #000;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 5px;
+  box-sizing: border-box;
 }
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -249,33 +258,6 @@ footer {
   }
 }
 
-@media (max-width: 960px) {
-  header {
-    padding: 60px 0;
-  }
-
-  header h1 {
-    font-size: 48px;
-  }
-
-  header h2 {
-    font-size: 20px;
-  }
-
-  header h3 {
-    font-size: 12px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
-  }
-
-  section {
-    padding: 30px;
-  }
-}
-
 .custom-wrapper-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -294,29 +276,17 @@ footer {
 }
 
 @media (max-width: 960px) {
-  header {
-    padding: 60px 0;
+  main {
+    padding: 50px;
   }
 
   .header h1 {
     font-size: 46px;
   }
 
-  header h2 {
-    font-size: 20px;
-  }
-
-  header h3 {
-    font-size: 12px;
-  }
-
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
-  }
-
-  section {
-    padding: 30px;
   }
   .card-header img {
     display: none;
@@ -324,5 +294,11 @@ footer {
 
   .embed {
     aspect-ratio: 16 / 9;
+  }
+}
+
+@media (min-width: 961px) {
+  .blue-eye {
+    margin-top: -100px;
   }
 }
